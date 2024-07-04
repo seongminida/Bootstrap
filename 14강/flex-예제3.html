@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            background-color: dodgerblue;
+            display: flex;
+            height: 300px;
+            align-items: center;
+            flex-direction: row;
+            /* flex-wrap: wrap-reverse; */
+            /* flex-flow: row wrap; */
+            /* justify-content:space-between; */
+
+        }
+
+        .flex-container > div{
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        .flex-container2{
+            background-color: dodgerblue;
+            display: flex;
+            height: 300px;
+            align-items: center;
+            flex-direction: row;
+            /* flex-wrap: wrap-reverse; */
+            /* flex-flow: row wrap; */
+            /* justify-content:space-between; */
+
+        }
+
+        .flex-container2 > div{
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-shrink: 0">3</div>
+        <div style="flex-shrink: 0">4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+    <hr>
+    <!-- flex-grow, flex-shrink, flex-basis -->
+    <div class="flex-container">
+        <div>1</div>
+        <div style="flex:0 0 200px">2</div>
+        <div style="flex-basis:200px">3</div>
+        <div style="flex-basis:500px">4</div>
+</body>
+</html>
